@@ -1,0 +1,16 @@
+<h2>******** Welcome to the longest word-game !********</h2>
+<p>Here is your grid :</p>
+<p><%=@grid%></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <form action="/score" class="form-group">
+        <label for="answer">Your Answer</label>
+        <input type="text" id="answer" name="word" placeholder="Give me your answer" class="form-control">
+        <input type="hidden" name="grid" value="<%=@grid%>">
+        <input type="hidden" name="start_time" value="<%=@start_time%>">
+        <input type="submit" value="Go On!" class="btn btn-success">
+      </form>
+    </div>
+  </div>
+</div>
